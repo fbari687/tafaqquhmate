@@ -11,7 +11,7 @@ const AboutPage = () => {
                         </h2>
                     </header>
 
-                    <div className="mt-4 w-full p-4 gap-2 flex items-start justify-start">
+                    <div className="mt-4 w-full p-4 gap-2 flex flex-col md:flex-row items-center md:items-start justify-start">
                         <img
                             src="/storage/localImage/logo500.png"
                             alt=""
@@ -131,8 +131,8 @@ const AboutPage = () => {
                                 </p>
                             </div>
                             <div className="w-full flex flex-col gap-4">
-                                <h3 className="font-bold text-2xl">Our Team</h3>
-                                <div className="w-full grid grid-cols-4 gap-4">
+                                <h3 className="font-bold text-2xl">Tim Kita</h3>
+                                <div className="w-full grid grid-cols-2 md:grid-cols-4 gap-4">
                                     <div>
                                         <div className="relative pb-56 mb-4 rounded shadow lg:pb-64">
                                             <img
@@ -141,7 +141,7 @@ const AboutPage = () => {
                                                 alt="Person"
                                             />
                                         </div>
-                                        <div className="flex flex-col sm:text-center">
+                                        <div className="flex flex-col items-center sm:text-center">
                                             <p className="text-lg font-bold">
                                                 Fathul Bari
                                             </p>
@@ -178,7 +178,7 @@ const AboutPage = () => {
                                                 alt="Person"
                                             />
                                         </div>
-                                        <div className="flex flex-col sm:text-center">
+                                        <div className="flex flex-col items-center sm:text-center">
                                             <p className="text-lg font-bold">
                                                 Hubbyna Ashfa Isyny
                                             </p>
@@ -215,7 +215,7 @@ const AboutPage = () => {
                                                 alt="Person"
                                             />
                                         </div>
-                                        <div className="flex flex-col sm:text-center">
+                                        <div className="flex flex-col items-center sm:text-center">
                                             <p className="text-lg font-bold">
                                                 Meiza Zafira Angraini
                                             </p>
@@ -252,7 +252,7 @@ const AboutPage = () => {
                                                 alt="Person"
                                             />
                                         </div>
-                                        <div className="flex flex-col sm:text-center">
+                                        <div className="flex flex-col items-center sm:text-center">
                                             <p className="text-lg font-bold">
                                                 Rasya Diandra Putra
                                             </p>
