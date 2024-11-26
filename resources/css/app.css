@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .default-answer-box {
+        @apply bg-white border;
+    }
+    .correct-answer-box {
+        @apply bg-green-200 border border-green-500;
+    }
+    .wrong-answer-box {
+        @apply bg-red-200 border border-red-500;
+    }
+    .ql-align-right {
+        @apply text-right;
+    }
+    .ql-align-justify {
+        @apply text-justify;
+    }
+    .ql-align-center {
+        @apply text-center;
+    }
+    .ql-align-left {
+        @apply text-left;
+    }
+}
