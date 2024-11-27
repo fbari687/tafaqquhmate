@@ -1,16 +1,16 @@
 import AdminLayout from "@/Layouts/AdminLayout";
-import { useState, useEffect } from "react";
-import { useQuill } from "react-quilljs";
+import { useState, useEffect, useRef } from "react";
 import "quill/dist/quill.snow.css";
+import ReactQuill from "react-quill-new";
 import { useForm, usePage } from "@inertiajs/react";
 
 const AdminMaterialCreate = () => {
     const { errors } = usePage().props;
 
-    const { quill, quillRef } = useQuill();
-
     const [image, setImage] = useState();
     const [excerpt, setExcerpt] = useState("");
+    const [value, setValue] = useState("");
+    const quillRef = useRef(null);
 
     const { data, setData, post, progress } = useForm({
         title: "",
@@ -19,26 +19,23 @@ const AdminMaterialCreate = () => {
         excerpt: "",
         image: null,
     });
-    useEffect(() => {
-        if (quill) {
-            quill.on("text-change", (delta, oldDelta, source) => {
-                setExcerpt(quill.getText());
-                // setData("body", quill.root.innerHTML);
-                setData((prevData) => ({
-                    ...prevData, // Gabungkan nilai sebelumnya
-                    body: quill.root.innerHTML, // Perbarui hanya body
-                }));
-            });
-        }
-    }, [quill]);
+
+    const getText = () => {
+        const editor = quillRef.current.getEditor();
+        const plainText = editor.getText();
+
+        setExcerpt(plainText);
+    };
 
     useEffect(() => {
-        // setData("excerpt", excerpt);
+        getText();
+
         setData((prevData) => ({
-            ...prevData, // Gabungkan nilai sebelumnya
-            excerpt: excerpt, // Perbarui hanya body
+            ...prevData,
+            body: value,
+            excerpt: excerpt,
         }));
-    }, [excerpt]);
+    }, [value, excerpt]);
 
     const handleImageChange = (e) => {
         setImage(URL.createObjectURL(e.target.files[0]));
@@ -162,9 +159,12 @@ const AdminMaterialCreate = () => {
                             >
                                 Isi Materi
                             </label>
-                            <div style={{ height: 200 }}>
-                                <div ref={quillRef} />
-                            </div>
+                            <ReactQuill
+                                theme="snow"
+                                value={value}
+                                onChange={setValue}
+                                ref={quillRef}
+                            />
                             {errors.body && (
                                 <p className="mt-2 px-2 text-xs text-red-600 dark:text-red-500">
                                     <span class="font-medium">

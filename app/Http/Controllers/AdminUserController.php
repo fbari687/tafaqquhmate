@@ -124,6 +124,12 @@ class AdminUserController extends Controller
             $validated['password'] = bcrypt($request->password);
         }
         $validated['role_id'] = Role::where('name', $validated['role_id'])->first()->id;
+        if ($request->file('image')) {
+            if ($request->oldImage) {
+                Storage::delete($request->oldImage);
+            }
+            $validated['image'] = $request->file('image')->store('profile-images');
+        }
 
         $user->update($validated);
         if ($user) {

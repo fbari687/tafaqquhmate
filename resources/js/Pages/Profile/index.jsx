@@ -1,31 +1,116 @@
 import Layout from "@/Layouts/Layout";
-import { Link, usePage } from "@inertiajs/react";
+import { Link, useForm, usePage } from "@inertiajs/react";
+import { useState } from "react";
+import { Modal } from "react-responsive-modal";
+import "react-responsive-modal/styles.css";
 
 const profilePage = ({ quizAnswers }) => {
     const { auth } = usePage().props;
+    const { errors } = usePage().props;
+
+    const [open, setOpen] = useState(false);
+    const [image, setImage] = useState();
+
+    const onOpenModal = () => setOpen(true);
+    const onCloseModal = () => setOpen(false);
+
+    const { data, setData, post, progress } = useForm({
+        image: null,
+        username: auth.username,
+    });
+
+    const handleImageChange = (e) => {
+        setImage(URL.createObjectURL(e.target.files[0]));
+        setData((prevData) => ({
+            ...prevData,
+            image: e.target.files[0],
+        }));
+    };
+
+    const submitForm = (e) => {
+        e.preventDefault();
+        post("/profile");
+        onCloseModal();
+    };
+
     return (
         <Layout>
             <div className="container mx-auto py-12 px-5 relative">
                 <div className="md:flex no-wrap md:-mx-2 ">
                     <div className="w-full md:w-3/12 md:mx-2">
-                        <div className="bg-white p-3 border-t-4 border-green-400">
+                        <div className="bg-white p-3 border-t-4 border-green-400 flex flex-col gap-2">
                             <h1 className="text-gray-900 text-center font-bold text-xl leading-8 my-1">
                                 {auth.name}
                             </h1>
                             <img
-                                className="h-24 w-24 rounded-full mx-auto"
+                                className="h-24 w-24 rounded-full mx-auto object-cover"
                                 src={`/storage/${auth.image}`}
                                 alt=""
                             />
+                            <button
+                                className="bg-yellowAcc text-black hover:bg-yellowAccHover transition duration-150 py-1 px-3 text-center font-bold rounded-full text-sm w-fit self-center cursor-pointer"
+                                onClick={onOpenModal}
+                            >
+                                Ganti Foto Profil
+                            </button>
+                            <Modal open={open} onClose={onCloseModal} center>
+                                <form onSubmit={submitForm}>
+                                    <div className="mb-5">
+                                        <label
+                                            className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                                            htmlFor="image"
+                                        >
+                                            Upload Gambar Baru
+                                        </label>
+                                        <input
+                                            className="block w-full text-sm text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400"
+                                            aria-describedby="user_avatar_help"
+                                            id="image"
+                                            type="file"
+                                            onChange={(e) => {
+                                                handleImageChange(e);
+                                            }}
+                                        />
+                                        <p className="text-xs">*Max 2 MB</p>
+                                        {errors.image && (
+                                            <p className="mt-2 px-2 text-xs text-red-600 dark:text-red-500">
+                                                <span class="font-medium">
+                                                    {errors.image}
+                                                </span>
+                                            </p>
+                                        )}
+                                        {progress && (
+                                            <progress
+                                                value={progress.percentage}
+                                                max="100"
+                                            >
+                                                {progress.percentage}%
+                                            </progress>
+                                        )}
+                                        {image && (
+                                            <div className="border-2 p-2 mt-5 flex flex-col gap-1">
+                                                <span className="text-sm">
+                                                    Preview
+                                                </span>
+                                                <img
+                                                    src={image}
+                                                    alt=""
+                                                    className="w-1/2"
+                                                />
+                                            </div>
+                                        )}
+                                    </div>
+                                    <div className="mt-24 lg:mt-5 lg:col-span-3 flex flex-row items-end justify-end">
+                                        <button
+                                            type="submit"
+                                            className="w-fit text-black bg-yellowAcc hover:bg-yellowAccHover focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium transition duraton-150 rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
+                                        >
+                                            Submit
+                                        </button>
+                                    </div>
+                                </form>
+                            </Modal>
                             <ul className="bg-gray-100 text-gray-600 hover:text-gray-700 hover:shadow py-2 px-3 mt-3 divide-y rounded shadow-sm">
-                                {/* <li className="flex items-center py-3">
-                                    <span>Status</span>
-                                    <span className="ml-auto">
-                                        <span className="bg-green-500 py-1 px-2 rounded text-white text-sm">
-                                            Active
-                                        </span>
-                                    </span>
-                                </li> */}
                                 <li className="flex items-center py-3">
                                     <span>Daftar Sejak</span>
                                     <span className="ml-auto">

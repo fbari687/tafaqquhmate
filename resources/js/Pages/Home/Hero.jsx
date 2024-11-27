@@ -13,6 +13,17 @@ const Hero = () => {
         `"Menuntut ilmu (agama) adalah kewajiban bagi setiap muslim." - Hadis`,
         `"Bukan ilmu yang seharusnya mendatangimu, tapi kamu yang seharusnya mendatangi ilmu." - Imam Malik`,
         `"Siapa yang menempuh jalan untuk mencari ilmu, maka Allah akan mudahkan baginya jalan menuju surga." - Hadis`,
+        `"Tahapan pertama dalam mencari ilmu adalah mendengarkan, kemudian diam dan menyimak dengan penuh perhatian, lalu menjaganya, lalu mengamalkannya, dan kemudian menyebarkannya." - Sufyan bin Uyainah`,
+        `"Ilmu adalah kehidupan bagi pikiran." - Abu Bakar`,
+        `"Jika seorang mencari ilmu, maka itu akan tampak di wajah, tangan dan lidahnya serta dalam kerendahan hatinya kepada Allah." - Hasan al-Bashri`,
+        `"Ilmu adalah yang memberikan manfaat, bukan yang sekadar hanya dihafal." - Imam Syafi'i`,
+        `"Esensi dari ilmu adalah untuk mengetahui apa itu ibadah dan ketaatan." - Imam Ghazali`,
+        `"Ilmu itu ada dua macam: apa yang diserap dan yang didengar. Dan yang didengar tidak akan memberikan manfaat jika tidak diserap." - Ali bin Abi Thalib`,
+        `"Menuntut ilmu di masa muda bagai mengukir di atas batu." - Hasan al-Bashri`,
+        `"Barangsiapa belajar sesuatu semata-mata karena Allah, mencari ilmu yang ada bersama-Nya, maka dia akan menang. Dan barang siapa yang belajar sesuatu karena selain Allah, maka dia tidak akan mencapai tujuannya, juga pengetahuan yang diperolehnya tidak akan membawanya lebih dekat kepada Allah." - Hasan al-Basri`,
+        `"Karunia Allah yang paling lengkap adalah menjalani kehidupan berdasarkan ilmu." - Ali bin Abi Thalib`,
+        `"Allah akan mengangkat derajat orang-orang yang beriman dan orang-orang yang berilmu di antara kamu sekalian." (Q.S Al-Mujadilah: 11)`,
+        `"Tuntutlah ilmu. Di saat kamu miskin, ia akan menjadi hartamu. Di saat kamu kaya, ia akan menjadi perhiasanmu." - Luqman al-Hakim`,
     ];
 
     return (
@@ -39,6 +50,7 @@ const Hero = () => {
                             typeSpeed={40}
                             backSpeed={10}
                             loop
+                            shuffle
                         />
                     </div>
                     <Link

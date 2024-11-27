@@ -8,6 +8,7 @@ use App\Models\Role;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Storage;
 use Inertia\Inertia;
 
 class AuthController extends Controller
@@ -111,5 +112,40 @@ class AuthController extends Controller
         return Inertia::render('Profile/index', [
             'quizAnswers' => $quizAnswers
         ]);
+    }
+
+    public function changeProfilePicture(Request $request)
+    {
+        $request->validate([
+            'username' => 'required|exists:users,username'
+        ]);
+
+        $user = User::where('username', $request->username)->first();
+
+        $validated = $request->validate([
+            'image' => 'image|file|max:2048'
+        ]);
+
+        $validated['image'] = $request->file('image')->store('profile-images');
+        if ($user->image) {
+            if ($user->image != "profile-images/default-profile.webp") {
+                Storage::delete($user->image);
+            }
+        }
+        $updateUser = $user->update($validated);
+
+        if ($updateUser) {
+            return redirect('/profile')->with('flash', [
+                'status' => 'success',
+                'title' => "Berhasil Mengganti Foto Profil",
+                'icon' => 'success',
+            ]);
+        } else {
+            return redirect('/profile')->with('flash', [
+                'status' => 'failed',
+                'title' => "Gagal Mengganti Foto Profil",
+                'icon' => 'error',
+            ]);
+        }
     }
 }

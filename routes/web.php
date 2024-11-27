@@ -31,6 +31,7 @@ Route::middleware(['isStudent'])->group(function () {
     Route::post('/api/checkAns', [QuizController::class, 'checkAns']);
     Route::post('/api/saveAns', [QuizController::class, 'saveAns']);
     Route::get('/profile', [AuthController::class, 'profile']);
+    Route::post('/profile', [AuthController::class, 'changeProfilePicture']);
 });
 Route::get('/logout', [AuthController::class, 'logout'])->middleware('auth');
 Route::middleware(['notStudent'])->group(function () {

@@ -1,3 +1,4 @@
+import DevProfile from "@/Components/DevProfile";
 import Layout from "@/Layouts/Layout";
 
 const AboutPage = () => {
@@ -20,267 +21,71 @@ const AboutPage = () => {
                         <div className="flex p-4 flex-col gap-8">
                             <div className="w-full flex flex-col gap-4">
                                 <p className="text-justify">
-                                    Lorem ipsum dolor sit amet consectetur
-                                    adipisicing elit. Mollitia voluptas
-                                    perspiciatis omnis itaque suscipit
-                                    necessitatibus odio nobis quidem,
-                                    perferendis dolorum, ex laborum. Molestiae
-                                    facilis nesciunt reprehenderit vero? Ipsam
-                                    repudiandae neque autem ullam veniam enim
-                                    asperiores temporibus sit a, in animi velit.
-                                    Distinctio saepe quasi unde itaque
-                                    necessitatibus nobis fuga nostrum, hic porro
-                                    cum consectetur earum rem quis facere quo
-                                    autem rerum suscipit atque, nisi ipsam at
-                                    molestiae animi. Facere molestias quam
-                                    dolorem ut ipsum accusantium expedita, in
-                                    dignissimos commodi error laborum. Adipisci
-                                    iusto ab iste ut voluptates vero. Minima quo
-                                    corporis optio temporibus architecto sit
-                                    dicta accusamus aliquam numquam? Culpa
-                                    nesciunt porro nam quo inventore rem
-                                    voluptates aut mollitia tempora expedita
-                                    tenetur consectetur quas maxime illo in,
-                                    dolores magnam amet nostrum molestias
-                                    suscipit! Ullam eveniet tempore accusamus,
-                                    accusantium iste veniam impedit illo dolorem
-                                    non nisi vero unde aliquid. Excepturi sit
-                                    consectetur sapiente beatae rem ab
-                                    dignissimos numquam magnam adipisci
-                                    molestiae id voluptates omnis illo totam
-                                    cumque repudiandae exercitationem ea eos
-                                    sed, cupiditate ipsa, cum quisquam. Magni,
-                                    similique porro quam voluptatibus aperiam
-                                    aut, beatae iusto itaque non at suscipit
-                                    voluptas eveniet eum. Nulla porro excepturi
-                                    fuga dolore. Sunt veritatis ipsa ratione
-                                    numquam minus molestiae quia, molestias nam
-                                    esse voluptatibus perferendis iure
-                                    accusantium vero non inventore consectetur
-                                    iste omnis amet odit corrupti. Dolor, sed
-                                    aliquam illo error id, culpa aspernatur quia
-                                    quos at tempora voluptatum nostrum nisi nam?
-                                    Molestiae similique veniam itaque modi
-                                    doloribus, aliquid est veritatis vero
-                                    dolorem quam at, consequatur minus ipsa
-                                    error harum cum rerum tempora quis culpa
-                                    repellendus! Libero dolor quaerat eveniet
-                                    ipsam, pariatur eum eos nobis earum debitis
-                                    minima iste ullam voluptatem repellat
-                                    officiis? In alias reiciendis, voluptatem
-                                    illum vero vel sint provident recusandae
-                                    corporis id nihil ad nostrum necessitatibus!
-                                    Accusantium, corrupti modi deleniti fuga
-                                    culpa nobis fugiat vero dicta deserunt
-                                    omnis, nam repudiandae sit quasi eum?
+                                    TafaqquhMate adalah sebuah platform digital
+                                    inovatif yang dirancang untuk mempermudah
+                                    siapa saja dalam memperdalam pemahaman ilmu
+                                    agama secara modern dan menyenangkan.
                                 </p>
                                 <p className="text-justify">
-                                    Lorem ipsum dolor sit amet consectetur
-                                    adipisicing elit. Mollitia voluptas
-                                    perspiciatis omnis itaque suscipit
-                                    necessitatibus odio nobis quidem,
-                                    perferendis dolorum, ex laborum. Molestiae
-                                    facilis nesciunt reprehenderit vero? Ipsam
-                                    repudiandae neque autem ullam veniam enim
-                                    asperiores temporibus sit a, in animi velit.
-                                    Distinctio saepe quasi unde itaque
-                                    necessitatibus nobis fuga nostrum, hic porro
-                                    cum consectetur earum rem quis facere quo
-                                    autem rerum suscipit atque, nisi ipsam at
-                                    molestiae animi. Facere molestias quam
-                                    dolorem ut ipsum accusantium expedita, in
-                                    dignissimos commodi error laborum. Adipisci
-                                    iusto ab iste ut voluptates vero. Minima quo
-                                    corporis optio temporibus architecto sit
-                                    dicta accusamus aliquam numquam? Culpa
-                                    nesciunt porro nam quo inventore rem
-                                    voluptates aut mollitia tempora expedita
-                                    tenetur consectetur quas maxime illo in,
-                                    dolores magnam amet nostrum molestias
-                                    suscipit! Ullam eveniet tempore accusamus,
-                                    accusantium iste veniam impedit illo dolorem
-                                    non nisi vero unde aliquid. Excepturi sit
-                                    consectetur sapiente beatae rem ab
-                                    dignissimos numquam magnam adipisci
-                                    molestiae id voluptates omnis illo totam
-                                    cumque repudiandae exercitationem ea eos
-                                    sed, cupiditate ipsa, cum quisquam. Magni,
-                                    similique porro quam voluptatibus aperiam
-                                    aut, beatae iusto itaque non at suscipit
-                                    voluptas eveniet eum. Nulla porro excepturi
-                                    fuga dolore. Sunt veritatis ipsa ratione
-                                    numquam minus molestiae quia, molestias nam
-                                    esse voluptatibus perferendis iure
-                                    accusantium vero non inventore consectetur
-                                    iste omnis amet odit corrupti. Dolor, sed
-                                    aliquam illo error id, culpa aspernatur quia
-                                    quos at tempora voluptatum nostrum nisi nam?
-                                    Molestiae similique veniam itaque modi
-                                    doloribus, aliquid est veritatis vero
-                                    dolorem quam at, consequatur minus ipsa
-                                    error harum cum rerum tempora quis culpa
-                                    repellendus! Libero dolor quaerat eveniet
-                                    ipsam, pariatur eum eos nobis earum debitis
-                                    minima iste ullam voluptatem repellat
-                                    officiis? In alias reiciendis, voluptatem
-                                    illum vero vel sint provident recusandae
-                                    corporis id nihil ad nostrum necessitatibus!
-                                    Accusantium, corrupti modi deleniti fuga
-                                    culpa nobis fugiat vero dicta deserunt
-                                    omnis, nam repudiandae sit quasi eum?
+                                    Kami menggabungkan pembelajaran ilmu agama
+                                    dengan berbasis teknologi terkini,
+                                    TafaqquhMate menyediakan fitur kuis dan
+                                    modul pembelajaran yang akan mendukung
+                                    pembelajaran agar lebih mudah diakses
+                                    dimanapun.
+                                </p>
+                                <p className="text-justify">
+                                    Platform ini bertujuan untuk meningkatkan
+                                    pemahaman konsep keislaman, serta
+                                    menginspirasi perjalanan spiritual pengguna
+                                    melalui pendekatan yang relevan dan menarik.
+                                </p>
+                                <p className="text-justify">
+                                    Dengan visi tersebut, TafaqquhMate
+                                    berkomitmen menjadi pendamping terbaik dalam
+                                    perjalanan menuju pemahaman agama yang lebih
+                                    dalam. TafaqquhMate hadir sebagai solusi
+                                    pembelajaran agama yang relevan dengan
+                                    kebutuhan masa kini.
+                                </p>
+                                <p className="text-justify">
+                                    TafaqquhMate juga dibuat sebagai salah satu
+                                    Project Akhir dalam Mata Kuliah Pendidikan
+                                    Agama di Politeknik Negeri Jakarta,
+                                    menjadikannya wujud nyata dari kolaborasi
+                                    antara ilmu pengetahuan, teknologi, dan
+                                    tradisi keagamaan.
                                 </p>
                             </div>
                             <div className="w-full flex flex-col gap-4">
-                                <h3 className="font-bold text-2xl">Tim Kita</h3>
+                                <h3 className="font-bold text-2xl">
+                                    Anggota Tim
+                                </h3>
                                 <div className="w-full grid grid-cols-2 md:grid-cols-4 gap-4">
-                                    <div>
-                                        <div className="relative pb-56 mb-4 rounded shadow lg:pb-64">
-                                            <img
-                                                className="absolute object-cover w-full h-full rounded"
-                                                src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=3&amp;h=750&amp;w=1260"
-                                                alt="Person"
-                                            />
-                                        </div>
-                                        <div className="flex flex-col items-center sm:text-center">
-                                            <p className="text-lg font-bold">
-                                                Fathul Bari
-                                            </p>
-                                            <p className="mb-5 text-xs text-gray-800">
-                                                Developer
-                                            </p>
-                                            <div className="flex items-center space-x-3 sm:justify-center">
-                                                <a
-                                                    href="/"
-                                                    target="_blank"
-                                                    className="text-gray-600 transition-colors duration-300 hover:text-black"
-                                                >
-                                                    <svg
-                                                        viewBox="0 0 30 30"
-                                                        fill="currentColor"
-                                                        className="h-6"
-                                                    >
-                                                        <circle
-                                                            cx="15"
-                                                            cy="15"
-                                                            r="4"
-                                                        />
-                                                        <path d="M19.999,3h-10C6.14,3,3,6.141,3,10.001v10C3,23.86,6.141,27,10.001,27h10C23.86,27,27,23.859,27,19.999v-10   C27,6.14,23.859,3,19.999,3z M15,21c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S18.309,21,15,21z M22,9c-0.552,0-1-0.448-1-1   c0-0.552,0.448-1,1-1s1,0.448,1,1C23,8.552,22.552,9,22,9z" />
-                                                    </svg>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <div className="relative pb-56 mb-4 rounded shadow lg:pb-64">
-                                            <img
-                                                className="absolute object-cover w-full h-full rounded"
-                                                src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=3&amp;h=750&amp;w=1260"
-                                                alt="Person"
-                                            />
-                                        </div>
-                                        <div className="flex flex-col items-center sm:text-center">
-                                            <p className="text-lg font-bold">
-                                                Hubbyna Ashfa Isyny
-                                            </p>
-                                            <p className="mb-5 text-xs text-gray-800">
-                                                Developer
-                                            </p>
-                                            <div className="flex items-center space-x-3 sm:justify-center">
-                                                <a
-                                                    href="/"
-                                                    target="_blank"
-                                                    className="text-gray-600 transition-colors duration-300 hover:text-black"
-                                                >
-                                                    <svg
-                                                        viewBox="0 0 30 30"
-                                                        fill="currentColor"
-                                                        className="h-6"
-                                                    >
-                                                        <circle
-                                                            cx="15"
-                                                            cy="15"
-                                                            r="4"
-                                                        />
-                                                        <path d="M19.999,3h-10C6.14,3,3,6.141,3,10.001v10C3,23.86,6.141,27,10.001,27h10C23.86,27,27,23.859,27,19.999v-10   C27,6.14,23.859,3,19.999,3z M15,21c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S18.309,21,15,21z M22,9c-0.552,0-1-0.448-1-1   c0-0.552,0.448-1,1-1s1,0.448,1,1C23,8.552,22.552,9,22,9z" />
-                                                    </svg>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <div className="relative pb-56 mb-4 rounded shadow lg:pb-64">
-                                            <img
-                                                className="absolute object-cover w-full h-full rounded"
-                                                src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=3&amp;h=750&amp;w=1260"
-                                                alt="Person"
-                                            />
-                                        </div>
-                                        <div className="flex flex-col items-center sm:text-center">
-                                            <p className="text-lg font-bold">
-                                                Meiza Zafira Angraini
-                                            </p>
-                                            <p className="mb-5 text-xs text-gray-800">
-                                                Developer
-                                            </p>
-                                            <div className="flex items-center space-x-3 sm:justify-center">
-                                                <a
-                                                    href="/"
-                                                    target="_blank"
-                                                    className="text-gray-600 transition-colors duration-300 hover:text-black"
-                                                >
-                                                    <svg
-                                                        viewBox="0 0 30 30"
-                                                        fill="currentColor"
-                                                        className="h-6"
-                                                    >
-                                                        <circle
-                                                            cx="15"
-                                                            cy="15"
-                                                            r="4"
-                                                        />
-                                                        <path d="M19.999,3h-10C6.14,3,3,6.141,3,10.001v10C3,23.86,6.141,27,10.001,27h10C23.86,27,27,23.859,27,19.999v-10   C27,6.14,23.859,3,19.999,3z M15,21c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S18.309,21,15,21z M22,9c-0.552,0-1-0.448-1-1   c0-0.552,0.448-1,1-1s1,0.448,1,1C23,8.552,22.552,9,22,9z" />
-                                                    </svg>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <div className="relative pb-56 mb-4 rounded shadow lg:pb-64">
-                                            <img
-                                                className="absolute object-cover w-full h-full rounded"
-                                                src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=3&amp;h=750&amp;w=1260"
-                                                alt="Person"
-                                            />
-                                        </div>
-                                        <div className="flex flex-col items-center sm:text-center">
-                                            <p className="text-lg font-bold">
-                                                Rasya Diandra Putra
-                                            </p>
-                                            <p className="mb-5 text-xs text-gray-800">
-                                                Developer
-                                            </p>
-                                            <div className="flex items-center space-x-3 sm:justify-center">
-                                                <a
-                                                    href="/"
-                                                    target="_blank"
-                                                    className="text-gray-600 transition-colors duration-300 hover:text-black"
-                                                >
-                                                    <svg
-                                                        viewBox="0 0 30 30"
-                                                        fill="currentColor"
-                                                        className="h-6"
-                                                    >
-                                                        <circle
-                                                            cx="15"
-                                                            cy="15"
-                                                            r="4"
-                                                        />
-                                                        <path d="M19.999,3h-10C6.14,3,3,6.141,3,10.001v10C3,23.86,6.141,27,10.001,27h10C23.86,27,27,23.859,27,19.999v-10   C27,6.14,23.859,3,19.999,3z M15,21c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S18.309,21,15,21z M22,9c-0.552,0-1-0.448-1-1   c0-0.552,0.448-1,1-1s1,0.448,1,1C23,8.552,22.552,9,22,9z" />
-                                                    </svg>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    <DevProfile
+                                        name={"Fathul Bari"}
+                                        image={"/storage/localImage/bari.jpeg"}
+                                        href={"https://instagram.com/fbariaja"}
+                                        subTitle={"@fbariaja"}
+                                    />
+                                    <DevProfile
+                                        name={"Hubbyna Ashfa Isyny"}
+                                        image={"/storage/localImage/byna.jpeg"}
+                                        href={"https://instagram.com/byynxx"}
+                                        subTitle={"@byynxx"}
+                                    />
+                                    <DevProfile
+                                        name={"Meiza Zafira Angraini"}
+                                        image={"/storage/localImage/mei.jpeg"}
+                                        href={"https://instagram.com/_mzfraa"}
+                                        subTitle={"@_mzfraa"}
+                                    />
+                                    <DevProfile
+                                        name={"Rasya Diandra Putra"}
+                                        image={"/storage/localImage/rasya.jpeg"}
+                                        href={"https://instagram.com/rasyadps"}
+                                        subTitle={"@rasyadps"}
+                                    />
                                 </div>
                             </div>
                         </div>

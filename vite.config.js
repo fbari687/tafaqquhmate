@@ -10,6 +10,9 @@ export default defineConfig({
         }),
         react(),
     ],
+    optimizeDeps: {
+        include: ["quill"],
+    },
     resolve: {
         alias: {
             "@": "/resources/js",

@@ -2,7 +2,6 @@ import ArticleItem from "@/Components/ArticleItem";
 import { Link } from "@inertiajs/react";
 
 const Article = ({ materials }) => {
-    console.log(materials);
     return (
         <section className="bg-cream">
             <div className="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">

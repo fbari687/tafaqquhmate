@@ -88,7 +88,7 @@ const Nav = ({ children }) => {
                                 <img
                                     src={`/storage/${auth.image}`}
                                     alt=""
-                                    className="h-6 aspect-square rounded-full"
+                                    className="h-8 aspect-square rounded-full object-cover"
                                 />
                                 <div className="font-bold">{auth.name}</div>
                             </div>
@@ -127,7 +127,7 @@ const Nav = ({ children }) => {
                             <img
                                 src={`/storage/${auth.image}`}
                                 alt=""
-                                className="h-4 aspect-square rounded-full object-cover"
+                                className="h-6 aspect-square rounded-full object-cover"
                             />
                             {auth.name}
                             <svg

@@ -68,7 +68,7 @@ const NavbarAdmin = ({ openSidebar }) => {
                                         Open user menu
                                     </span>
                                     <img
-                                        className="w-8 h-8 rounded-full"
+                                        className="w-8 h-8 rounded-full object-cover"
                                         src={`/storage/${auth.image}`}
                                         alt="user photo"
                                     />

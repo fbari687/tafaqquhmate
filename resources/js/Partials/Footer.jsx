@@ -1,4 +1,5 @@
 import { Link } from "@inertiajs/react";
+import { FaInstagram, FaTiktok, FaXTwitter } from "react-icons/fa6";
 
 export default function Footer() {
     return (
@@ -87,22 +88,34 @@ export default function Footer() {
                         </span>
                         <div className="flex items-center mt-1 space-x-3">
                             <a
-                                href="/"
+                                href="https://instagram.com/tafaqquhmate"
                                 target="_blank"
                                 className="text-yellowAcc transition-colors duration-300 hover:text-black"
                             >
-                                <svg
-                                    viewBox="0 0 30 30"
-                                    fill="currentColor"
-                                    className="h-6"
-                                >
-                                    <circle cx="15" cy="15" r="4" />
-                                    <path d="M19.999,3h-10C6.14,3,3,6.141,3,10.001v10C3,23.86,6.141,27,10.001,27h10C23.86,27,27,23.859,27,19.999v-10   C27,6.14,23.859,3,19.999,3z M15,21c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S18.309,21,15,21z M22,9c-0.552,0-1-0.448-1-1   c0-0.552,0.448-1,1-1s1,0.448,1,1C23,8.552,22.552,9,22,9z" />
-                                </svg>
+                                <FaInstagram size={24} />
+                            </a>
+                            <a
+                                href="https://www.tiktok.com/@tafaqquh_mate"
+                                target="_blank"
+                                className="text-yellowAcc transition-colors duration-300 hover:text-black"
+                            >
+                                <FaTiktok size={24} />
+                            </a>
+                            <a
+                                href="https://x.com/TafaqquhMate"
+                                target="_blank"
+                                className="text-yellowAcc transition-colors duration-300 hover:text-black"
+                            >
+                                <FaXTwitter size={24} />
                             </a>
                         </div>
                         <p className="mt-4 text-sm text-white">
-                            Bisa dihubungi untuk konsultasi
+                            Tetap terhubung dengan kami di media sosial untuk
+                            konten Islami yang penuh hikmah dan informasi
+                            bermanfaat dari TafaqquhMate.
+                        </p>
+                        <p className="mt-4 text-sm text-white">
+                            Sebarkan kebaikan, jalin ukhuwah!
                         </p>
                     </div>
                 </div>
